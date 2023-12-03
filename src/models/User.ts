@@ -6,3 +6,9 @@ import { followings } from "../database/following";
 import { Like } from "./Like";
 
 export class User {
+    private readonly _id: string;
+
+    constructor(private _username: string, private _email: string, private _password: string, private _tweets: Tweet[] = []) {
+        this._id = uuidv4();
+        users.push(this);
+    }
