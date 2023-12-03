@@ -12,3 +12,6 @@ export class User {
         this._id = uuidv4();
         users.push(this);
     }
+    get username(): string {
+        return this._username;
+    }
