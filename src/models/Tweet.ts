@@ -9,3 +9,22 @@ export class Tweet {
         this.id = uuidv4();
     }
 
+    get content(): string {
+        return this._content;
+    }
+
+    get replies(): Tweet[] {
+        return this._replies;
+    }
+
+    get tweetType(): 'normal' | 'reply' {
+        return this._tweetType;
+    }
+
+    get likes(): Like[] {
+        return this._likes;
+    }
+
+    get username(): string {
+        return this._username;
+    }
