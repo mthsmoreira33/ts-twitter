@@ -28,3 +28,4 @@ export class Tweet {
     get username(): string {
         return this._username;
     }
+}
